@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/styleH.css">
+</head>
+<body>
+    <script>
+        function resizeIframe(iframe) {
+          iframe.style.height = "0px";
+          iframe.style.height =
+            iframe.contentWindow.document.documentElement.scrollHeight + "px";
+        }
+      </script>
+    <div id="main">
+        <header id="header-baner">
+                
+        </header>
+        <!-- Menu -->
+        <nav id="nav-menu">
+            <ul class="menu">
+                <li><a target="_tage" href="HTML/TrangChu.html">Trang Chủ</a></li>
+                <li><a target="_tage" href="HTML/SanPham.html">Sản Phẩm</a></li>
+                <li><a target="_tage" href="HTML/LienHe.html">Liên Hệ</a></li>
+                <li><a target="_tage" href="HTML/GopY.html">Góp Ý</a></li>
+                <li><a target="_tage" href="HTML/HoiDap.html">Hỏi&Đáp</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <iframe src="HTML/TrangChu.html" 
+                    style="border: none;" 
+                    scrolling="no" frameborder="0" 
+                    name="_tage" 
+                    frameborder="0"
+                    onload="resizeIframe(this)">
+                </iframe>
+        </div>
+        <footer id="footer">Copyright © 2024. By Nguyễn Trí Khôi. </footer>
+    </div>
+</body>
+</html>
